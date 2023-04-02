@@ -228,8 +228,10 @@ input,
 optgroup,
 select,
 textarea {
-  -webkit-appearance: none; /* 1 */
+  /* チェックボックスが消えるのでこの項目はコメントアウト
+  -webkit-appearance: none;
   appearance: none;
+  */
   vertical-align: middle;
   color: inherit;
   font: inherit;

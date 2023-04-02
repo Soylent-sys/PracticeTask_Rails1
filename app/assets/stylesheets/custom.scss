@@ -1,0 +1,192 @@
+body {
+  color: #444;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header-title {
+  background-color: #888;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.info-message {
+  background-color: #fff48d;
+  border-bottom: 2px solid #cfc673;
+  border-right: 2px solid #cfc673;
+  margin: 10px auto 0 auto;
+  padding: 10px 20px;
+  width: 1000px;
+}
+
+
+/* schedule index */
+
+.index-container {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px 50px;
+}
+
+.index-title_and_add-button {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.add-button {
+  background-color: #375ffe;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.add-button:hover {
+  opacity: .8;
+}
+
+.total-schedule_and_today {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.total-schedule {
+  padding-left: 10px;
+}
+
+.total-schedule span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.today {
+  color: #777;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+table {
+  border-top: 1px solid #ddd;
+  border-bottom: 2px solid #555;
+  border-left: 1px solid #ddd;
+  border-right: 2px solid #555;
+  width: 1000px;
+}
+
+thead {
+  border-bottom: 1px solid #555;
+}
+
+table th {
+  background-color: #ddd;
+  color: #555;
+  padding: 10px 20px;
+}
+
+table td {
+  padding: 15px 20px;
+}
+
+
+/* schedule new */
+
+.schedule-form {
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+  border-bottom: 2px solid #555;
+  border-left: 1px solid #ddd;
+  border-right: 2px solid #555;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 20px 10%;
+}
+
+.schedule-form div {
+  margin-bottom: 20px;
+}
+
+.schedule-new-container {
+  max-width: 60%;
+  margin: auto;
+  padding: 20px 50px;
+}
+
+.field-title {
+  height: 40px;
+  width: 100%;
+}
+
+.start-end-date-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-end-date-input div {
+  margin-bottom: 0;
+}
+
+.field-date {
+  height: 40px;
+  width: 240px;
+}
+
+.text-form input {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.text-form label {
+  display: block;
+}
+
+.field-memo {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  height: 150px;
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-submit_and_cancel {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.cancel-button {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.cancel-button:hover {
+  opacity: .8;
+}
+
+.form-submit_and_cancel .add-button {
+  border: none;
+  margin-top: 0;
+  margin-left: 10px;
+  padding: 10px 20px;
+}
+
+.check-box {
+  height: 20px;
+  margin-top: 0;
+  margin-right: 5px;
+  width: 20px;
+}
