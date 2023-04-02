@@ -1,7 +1,7 @@
 class SchedulesController < ApplicationController
   def index
     @schedules = Schedule.all
-    @date = Date.current.strftime('%Y年 %m月 %d日')
+    @date = Date.today
   end
 
   def new
