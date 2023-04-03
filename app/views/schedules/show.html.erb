@@ -2,7 +2,7 @@
   <div class="show-container">
     <%= link_to "← 一覧へ戻る", schedules_path, class: "link-text return-page" %>
     <div class="show-title_and_add-button">
-      <h2><%= "タイトル" %></h2>
+      <h2><%= @schedule.title %></h2>
       <div><%= link_to "編集", edit_schedule_path(@schedule.id), class: "add-button" %></div>
     </div>
     <div class="show-window">
