@@ -102,7 +102,7 @@ table td {
 }
 
 
-/* schedule new */
+/* schedule form */
 
 .schedule-form {
   background-color: #fafafa;
@@ -123,6 +123,14 @@ table td {
   max-width: 60%;
   margin: auto;
   padding: 20px 50px;
+}
+
+.required::after {
+  content: "※必須";
+  color: #f00;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 .field-title {

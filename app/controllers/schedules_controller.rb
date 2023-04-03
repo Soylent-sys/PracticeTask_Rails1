@@ -39,5 +39,9 @@ class SchedulesController < ApplicationController
   end
 
   def destroy
+    @schedule = Schedule.find(params[:id])
+    @schedule.destroy
+    flash[:notice] = "予定を削除しました"
+    redirect_to schedules_url
   end
 end

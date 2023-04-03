@@ -37,9 +37,15 @@
             <td><%= schedule.end_date.to_s(:date_custom) %></td>
             <td><%= schedule.all_day === true ? "○" : "" %></td>
             <td><%= schedule.updated_at.to_s(:datetime_custom) %></td>
-            <td><%= link_to "詳細", schedule, class: "link-text" %></td>
-            <td><%= link_to "編集", edit_schedule_path(schedule.id), class: "link-text" %></td>
-            <td></td>
+            <td>
+              <%= link_to "詳細", schedule_path(schedule.id), class: "link-text" %>
+            </td>
+            <td>
+              <%= link_to "編集", edit_schedule_path(schedule.id), class: "link-text" %>
+            </td>
+            <td>
+              <%= link_to "削除", schedule_path(schedule.id), method: :delete, data: { confirm: "予定を削除しますか？\n（この操作は取り消せません）" }, class: "link-text" %>
+            </td>
           </tr>
         <% end %>
       </tbody>

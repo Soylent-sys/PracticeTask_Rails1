@@ -1,16 +1,16 @@
 <%= form_with model: @schedule do |f| %>
   <div class="schedule-form">
     <div class="text-form">
-      <%= f.label :title ,"タイトル" %>
+      <%= f.label :title ,"タイトル", class: "required" %>
       <%= f.text_field :title, class: "field-title" %>
     </div>
     <div class="start-end-date-input">
       <div class="text-form">
-        <%= f.label :start_date ,"開始日" %>
+        <%= f.label :start_date ,"開始日", class: "required" %>
         <%= f.date_field :start_date, class: "field-date" %>
       </div>
       <div class="text-form">
-        <%= f.label :end_date ,"終了日" %>
+        <%= f.label :end_date ,"終了日", class: "required" %>
         <%= f.date_field :end_date, class: "field-date" %>
       </div>
     </div>
