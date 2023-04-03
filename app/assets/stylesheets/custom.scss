@@ -33,7 +33,7 @@ h2 {
 /* schedule index */
 
 .index-container {
-  max-width: 90%;
+  width: 1020px;
   margin: auto;
   padding: 20px 50px;
 }
@@ -84,7 +84,8 @@ table {
 }
 
 .index-container table {
-  width: 100%;
+  width: 930px;
+  margin: 0 auto;
 }
 
 thead {
@@ -120,7 +121,7 @@ table td {
 }
 
 .schedule-new-edit-container {
-  max-width: 60%;
+  width: 730px;
   margin: auto;
   padding: 20px 50px;
 }
