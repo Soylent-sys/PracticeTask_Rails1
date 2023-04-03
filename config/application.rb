@@ -18,7 +18,10 @@ module Scheduler
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    
+    # 時間表示を日本時間に設定
     config.time_zone = 'Tokyo'
+    # バリデーションエラー時に発生するレイアウト崩れを防止
     config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag }
   end
 end
