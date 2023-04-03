@@ -3,7 +3,7 @@
     <%= link_to "← 一覧へ戻る", schedules_path, class: "link-text return-page" %>
     <div class="show-title_and_add-button">
       <h2><%= "タイトル" %></h2>
-      <div><%= link_to "編集", schedules_path, class: "add-button" %></div>
+      <div><%= link_to "編集", edit_schedules_path(@schedule.id), class: "add-button" %></div>
     </div>
     <div class="show-window">
       <table>
