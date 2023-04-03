@@ -37,8 +37,8 @@
             <td><%= schedule.end_date.to_s(:date_custom) %></td>
             <td><%= schedule.all_day === true ? "○" : "" %></td>
             <td><%= schedule.updated_at.to_s(:datetime_custom) %></td>
-            <td></td>
-            <td></td>
+            <td><%= link_to "詳細", schedule, class: "link-text" %></td>
+            <td><%= link_to "編集", edit_schedule_path(schedule.id), class: "link-text" %></td>
             <td></td>
           </tr>
         <% end %>
