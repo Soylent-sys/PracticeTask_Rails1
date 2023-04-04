@@ -1,0 +1,30 @@
+<div class="show-wrapper">
+  <div class="show-container">
+    <%= link_to "← 一覧へ戻る", schedules_path, class: "link-text return-page" %>
+    <div class="show-title_and_add-button">
+      <h2><%= @schedule.title %></h2>
+      <div><%= link_to "編集", edit_schedule_path(@schedule.id), class: "add-button" %></div>
+    </div>
+    <div class="show-window">
+      <table>
+        <tr>
+          <th>開始日</th>
+          <td><%= @schedule.start_date.to_s(:date_custom) %></td>
+        </tr>
+        <tr>
+          <th>終了日</th>
+          <td><%= @schedule.end_date.to_s(:date_custom) %></td>
+        </tr>
+        <tr>
+          <th>終日</th>
+          <td><%= @schedule.all_day === true ? "○" : "" %></td>
+        </tr>
+        <tr>
+          <th>スケジュールメモ</th>
+          <td><%= @schedule.memo %></td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>

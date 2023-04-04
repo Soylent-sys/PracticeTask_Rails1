@@ -1,0 +1,54 @@
+<div class="index-wrapper">
+  <div class="index-container">
+    <div class="index-title_and_add-button">
+      <h2>スケジュール一覧</h2>
+      <div><%= link_to "新規追加", new_schedule_path, class: "add-button" %></div>
+    </div>
+    <div class="total-schedule_and_today">
+      <div class="total-schedule">
+        <p>予定の合計数： <span><%= @schedules.count %></span> 件</p>
+      </div>
+      <div class="today">
+        <p>本日の日付： <span><%= @date.to_s(:date_jp_today) %></span></p>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>タイトル</th>
+          <th>開始日</th>
+          <th>終了日</th>
+          <th>終日</th>
+          <th>更新日時</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @schedules.each do |schedule| %>
+          <tr>
+            <td><%= schedule.id %></td>
+            <td><%= schedule.title %></td>
+            <td><%= schedule.start_date.to_s(:date_custom) %></td>
+            <td><%= schedule.end_date.to_s(:date_custom) %></td>
+            <td><%= schedule.all_day === true ? "○" : "" %></td>
+            <td><%= schedule.updated_at.to_s(:datetime_custom) %></td>
+            <td>
+              <%= link_to "詳細", schedule_path(schedule.id), class: "link-text" %>
+            </td>
+            <td>
+              <%= link_to "編集", edit_schedule_path(schedule.id), class: "link-text" %>
+            </td>
+            <td>
+              <%= link_to "削除", schedule_path(schedule.id), method: :delete, data: { confirm: "予定を削除しますか？\n（この操作は取り消せません）" }, class: "link-text" %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
